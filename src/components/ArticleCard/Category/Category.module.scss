@@ -1,0 +1,19 @@
+@import '../../../theme';
+
+.categoryPill {
+    padding: 1em !important;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 0.75em;
+    width: 12.5em;
+}
+
+.pillContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pillText {
+    width: 100%;
+}
