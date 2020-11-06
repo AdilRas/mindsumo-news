@@ -24,4 +24,8 @@ interface ArticleInfo {
     content: string;
 }
 
-export type {NewsSource, SourceIdentity, ArticleInfo};
+interface Article {
+    data: ArticleInfo;
+    category: string;
+}
+export type {NewsSource, SourceIdentity, ArticleInfo, Article};
