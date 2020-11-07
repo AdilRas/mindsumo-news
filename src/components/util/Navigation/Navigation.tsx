@@ -6,7 +6,6 @@ import cx from 'classnames';
 const Navigation = () => {
 
     const navlinkStyles = cx(styles.link, styles['nav-item']);
-    const activeNavlinkStyles = cx(styles.link, styles['nav-item'], styles.activeLink);
 
     return (
         <div>

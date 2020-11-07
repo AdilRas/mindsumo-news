@@ -1,3 +1,4 @@
+// Interfaces definitions for API return values, as well as Article (which is custom)
 interface SourceIdentity {
     id: string;
     name: string;
