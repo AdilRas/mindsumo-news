@@ -4,11 +4,12 @@ import Checkbox from '../../../util/Checkbox/Checkbox';
 import {InputGroup, Input, Button, InputGroupText, InputGroupAddon, DropdownMenu, UncontrolledDropdown, DropdownToggle} from 'reactstrap';
 
 
-
+// Takes in functions from a higher order component which control state based on input from this component.
 const SearchAndFilter = (props: {handleChange: any, handleToggle: any, handleSearch: any}) => {
 
     return (
         <div className={styles.filterBar}>
+            {/* Filter Dropdown */}
             <div className={styles.filters}>
                 <UncontrolledDropdown group>
                     <DropdownToggle caret color="primary">
@@ -21,6 +22,8 @@ const SearchAndFilter = (props: {handleChange: any, handleToggle: any, handleSea
                     </DropdownMenu>
                 </UncontrolledDropdown>
             </div>
+            
+            {/* Search Bar and Button */}
             <div className={styles.navSearch}>
                 <InputGroup className="">
                     <InputGroupAddon addonType="prepend">
@@ -32,6 +35,7 @@ const SearchAndFilter = (props: {handleChange: any, handleToggle: any, handleSea
                     <Button color="primary" outline type="button" onClick={props.handleSearch}>Search</Button>
                 </InputGroup>
             </div>
+
         </div>
     )
 }

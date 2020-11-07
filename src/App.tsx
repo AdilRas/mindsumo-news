@@ -7,6 +7,7 @@ import "argon-design-system-react/src/assets/scss/argon-design-system-react.scss
 import Home from './components/pages/Home/Home';
 import Navigation from './components/util/Navigation/Navigation';
 
+// Barebones app component, main content is routed in the Home component.
 const App = () => {
   return (
     <div className="App">
