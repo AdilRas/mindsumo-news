@@ -48,6 +48,8 @@ const ArticleCard = (props: {article: Article}) => {
                     </h4>
                 </a>
                 <div>
+                    <div className={styles.source} style={{fontFamily: "nunito, sans-serif", fontSize: "1.2em"}}>{props.article.data.source.name}</div>
+                    {props.article.data.author ? <p>By: {props.article.data.author}</p> : ""}
                     <hr className={styles.cardDivider}/>
                     {getLabels(props.article)}
                 </div>
