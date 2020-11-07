@@ -1,0 +1,24 @@
+@import "../../../../theme";
+
+.filterBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdownMenu {
+    padding: 1em;
+}
+
+.dropdownMenu:nth-child(odd) {
+    background-color: $gray-200;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 5rem;
+}

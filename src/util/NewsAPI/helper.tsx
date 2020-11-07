@@ -3,15 +3,16 @@ import sources from '../../data/sources.json';
 import {Article, ArticleInfo, NewsSource, SourceIdentity} from './NewsSource';
 import {validIds, validNames} from '../../data/validSources';
 
-const baseURL: string = 'http://newsapi.org/v2/';
+const baseURL: string = 'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/';
 
 const allowedCategories = new Set(["sports", "entertainment", "technology"]);
 
 const extractArticlesFromRequest = async (request: string) => {
+    // console.log(process.env.REACT_APP_NEWS_API_KEY);
     let articles: ArticleInfo[] = [];
     await axios.get(request, {
         headers: {
-            'X-Api-Key': process.env.REACT_APP_NEWS_API_KEY
+            'X-Api-Key': process.env.REACT_APP_NEWS_API_KEY,
         }
     }).then((response) => {
         articles = response.data.articles;

@@ -12,11 +12,7 @@ const Navigation = () => {
         <div>
             <nav className={styles.nav}>
                 <NavLink className={navlinkStyles} to="/">AdilNews</NavLink>
-                <ul className={styles['nav-items']}>
-                    <NavLink className={navlinkStyles} activeClassName={activeNavlinkStyles} to='/sports'>Sports</NavLink>
-                    <NavLink className={navlinkStyles} activeClassName={activeNavlinkStyles} to='/tech'>Technology</NavLink>
-                    <NavLink className={navlinkStyles} activeClassName={activeNavlinkStyles} to='/entertainment'>Entertainment</NavLink>
-                </ul>
+                <h4>Your Source for the latest on Sports, Tech and Entertainment</h4>
             </nav>
 
         </div>
